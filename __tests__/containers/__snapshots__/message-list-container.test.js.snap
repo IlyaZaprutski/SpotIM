@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message list container should render the MessageList component 1`] = `
+<MessageList
+  classNames=""
+  currentUserId="0"
+  dispatch={[Function]}
+  messages={
+    Immutable.OrderedMap {
+      "0": Immutable.Record {
+        "id": "0",
+        "authorId": "0",
+        "userName": "testUser1",
+        "messageText": "test",
+        "date": 0,
+        "avatarUrl": "https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png",
+        "isOptimistic": false,
+      },
+      "1": Immutable.Record {
+        "id": "1",
+        "authorId": "1",
+        "userName": "testUser2",
+        "messageText": "test testUser2",
+        "date": 0,
+        "avatarUrl": "https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png",
+        "isOptimistic": false,
+      },
+      "2": Immutable.Record {
+        "id": "2",
+        "authorId": "0",
+        "userName": "testUser1",
+        "messageText": "test test",
+        "date": 0,
+        "avatarUrl": "https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png",
+        "isOptimistic": false,
+      },
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "clear": [Function],
+        "get": [Function],
+        "notify": [Function],
+        "subscribe": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "unsubscribe": [Function],
+    }
+  }
+/>
+`;

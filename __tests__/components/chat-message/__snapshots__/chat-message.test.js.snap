@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatMessage component mounts without crashing 1`] = `
+<ChatMessage
+  avatarUrl="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+  classNames=""
+  date={0}
+  isOptimistic={false}
+  isOwnMessage={true}
+  messageText="qwertyui"
+  userName="ilya"
+>
+  <div
+    className="chat-message chat-message_own-message"
+  >
+    <div
+      className="chat-message__avatar-container"
+    >
+      <Avatar
+        className="chat-message__avatar"
+        size={50}
+        src="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+      >
+        <img
+          className="chat-message__avatar"
+          size={50}
+          src="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "rgb(188, 188, 188)",
+              "borderRadius": "50%",
+              "color": "#ffffff",
+              "display": "inline-flex",
+              "fontSize": 25,
+              "height": 50,
+              "justifyContent": "center",
+              "muiPrepared": true,
+              "userSelect": "none",
+              "width": 50,
+            }
+          }
+        />
+      </Avatar>
+    </div>
+    <div
+      className="chat-message__message-info"
+    >
+      <div
+        className="chat-message__header"
+      >
+        <span
+          className="chat-message__user-name"
+        >
+          ilya
+        </span>
+        <span
+          className="chat-message__date"
+        >
+          <TimeAgo
+            classNames=""
+            date={0}
+            isLiveUpdate={true}
+          >
+            <time
+              className="time-ago"
+            >
+              48 years ago
+            </time>
+          </TimeAgo>
+        </span>
+      </div>
+      <div
+        className="chat-message__text"
+      >
+        qwertyui
+      </div>
+    </div>
+  </div>
+</ChatMessage>
+`;

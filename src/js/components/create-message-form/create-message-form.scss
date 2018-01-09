@@ -1,0 +1,25 @@
+.create-message-form {
+    &__paper-container {
+        padding: 16px;
+    }
+
+    &__user-info {
+        display: flex;
+        align-items: center;
+
+        padding-bottom: 10px;
+    }
+
+    &__user-avatar {
+        flex-shrink: 0;
+
+        margin-right: 15px;
+
+        background: none !important;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &__send-btn-container {
+        text-align: right;
+    }
+}

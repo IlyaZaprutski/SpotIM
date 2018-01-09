@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatRoom component shallow without crashing 1`] = `
+<div
+  className="chat-room"
+>
+  <Paper
+    circle={false}
+    className="chat-room__messages"
+    rounded={true}
+    transitionEnabled={true}
+    zDepth={1}
+  >
+    <Connect(MessageList) />
+  </Paper>
+  <div
+    className="chat-room__message-form"
+  >
+    <Connect(CreateMessageForm) />
+  </div>
+</div>
+`;

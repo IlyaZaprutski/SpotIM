@@ -1,1 +1,1 @@
-# real-time chat room
+# SpotIM chat room

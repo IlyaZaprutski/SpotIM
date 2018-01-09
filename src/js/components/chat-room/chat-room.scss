@@ -1,0 +1,25 @@
+.chat-room {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    &__message-form {
+        order: 1;
+
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    &__messages {
+        position: relative;
+
+        display: flex;
+        overflow-y: auto;
+        flex-direction: column-reverse;
+        flex-grow: 1;
+
+        margin-top: 10px;
+        padding: 10px 20px;
+    }
+}

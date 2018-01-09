@@ -2,7 +2,17 @@
     "parser": "babel-eslint",
     "extends": "airbnb",
     "globals": {
-        "document": true
+        "document": true,
+        "localStorage": true,
+        "describe": true,
+        "it": true,
+        "test": true,
+        "expect": true,
+        "beforeEach": true,
+        "jest": true,
+        "window": true,
+        "beforeAll": true,
+        "afterAll": true
     },
     "rules": {
         "indent": ["error", 4],
@@ -17,6 +27,10 @@
         "import/no-unresolved": "none",
         "import/extensions": "never",
         "import/prefer-default-export": "none",
-        "linebreak-style": "off"
+        "linebreak-style": "off",
+        "class-methods-use-this": "off",
+        "no-useless-escape": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "no-mixed-operators": "off"
     }
 }

@@ -1,0 +1,33 @@
+// {
+//     "presets": [
+//         [
+//             "env",
+//             {
+//                 "loose": true,
+//                 "targets": {
+//                     "ie": 11,
+//                     "uglify": true
+//                 }
+//             }
+//         ],
+//         "react",
+//         "stage-2"
+//     ],
+//     "plugins": [
+//         "transform-class-properties",
+//         "transform-object-rest-spread",
+//         "transform-export-extensions",
+//         "transform-runtime",
+//         "add-module-exports"
+//     ]
+// }
+
+{
+    "presets": ["react", "stage-2"],
+
+    "env": {
+        "test": {
+            "plugins": ["transform-es2015-modules-commonjs"]
+        }
+    }
+}

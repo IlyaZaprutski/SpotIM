@@ -1,0 +1,9 @@
+.message-list {
+    width: 100%;
+
+    &__message-container {
+        margin-bottom: 15px;
+
+        word-break: break-all;
+    }
+}

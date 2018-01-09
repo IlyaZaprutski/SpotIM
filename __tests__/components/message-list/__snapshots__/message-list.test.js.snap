@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MessageList component mounts without crashing 1`] = `
+<MessageList
+  classNames=""
+  currentUserId="0"
+  messages={
+    Immutable.OrderedMap {
+      "0": Immutable.Record {
+        "id": "0",
+        "authorId": "0",
+        "userName": "testUser1",
+        "messageText": "test",
+        "date": 0,
+        "avatarUrl": "https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png",
+        "isOptimistic": false,
+      },
+      "1": Immutable.Record {
+        "id": "1",
+        "authorId": "1",
+        "userName": "testUser2",
+        "messageText": "test testUser2",
+        "date": 0,
+        "avatarUrl": "https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png",
+        "isOptimistic": false,
+      },
+      "2": Immutable.Record {
+        "id": "0",
+        "authorId": "0",
+        "userName": "testUser1",
+        "messageText": "test test",
+        "date": 0,
+        "avatarUrl": "https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png",
+        "isOptimistic": false,
+      },
+    }
+  }
+>
+  <div
+    className="message-list"
+  >
+    <div
+      className="message-list__list-container"
+    >
+      <div
+        className="message-list__message-container"
+        key="0"
+      >
+        <ChatMessage
+          avatarUrl="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+          classNames=""
+          date={0}
+          isOptimistic={false}
+          isOwnMessage={true}
+          messageText="test"
+          userName="testUser1"
+        >
+          <div
+            className="chat-message chat-message_own-message"
+          >
+            <div
+              className="chat-message__avatar-container"
+            >
+              <Avatar
+                className="chat-message__avatar"
+                size={50}
+                src="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+              >
+                <img
+                  className="chat-message__avatar"
+                  size={50}
+                  src="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "rgb(188, 188, 188)",
+                      "borderRadius": "50%",
+                      "color": "#ffffff",
+                      "display": "inline-flex",
+                      "fontSize": 25,
+                      "height": 50,
+                      "justifyContent": "center",
+                      "muiPrepared": true,
+                      "userSelect": "none",
+                      "width": 50,
+                    }
+                  }
+                />
+              </Avatar>
+            </div>
+            <div
+              className="chat-message__message-info"
+            >
+              <div
+                className="chat-message__header"
+              >
+                <span
+                  className="chat-message__user-name"
+                >
+                  testUser1
+                </span>
+                <span
+                  className="chat-message__date"
+                >
+                  <TimeAgo
+                    classNames=""
+                    date={0}
+                    isLiveUpdate={true}
+                  >
+                    <time
+                      className="time-ago"
+                    >
+                      48 years ago
+                    </time>
+                  </TimeAgo>
+                </span>
+              </div>
+              <div
+                className="chat-message__text"
+              >
+                test
+              </div>
+            </div>
+          </div>
+        </ChatMessage>
+      </div>
+      <div
+        className="message-list__message-container"
+        key="1"
+      >
+        <ChatMessage
+          avatarUrl="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+          classNames=""
+          date={0}
+          isOptimistic={false}
+          isOwnMessage={false}
+          messageText="test testUser2"
+          userName="testUser2"
+        >
+          <div
+            className="chat-message chat-message_extraneous-message"
+          >
+            <div
+              className="chat-message__avatar-container"
+            >
+              <Avatar
+                className="chat-message__avatar"
+                size={50}
+                src="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+              >
+                <img
+                  className="chat-message__avatar"
+                  size={50}
+                  src="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "rgb(188, 188, 188)",
+                      "borderRadius": "50%",
+                      "color": "#ffffff",
+                      "display": "inline-flex",
+                      "fontSize": 25,
+                      "height": 50,
+                      "justifyContent": "center",
+                      "muiPrepared": true,
+                      "userSelect": "none",
+                      "width": 50,
+                    }
+                  }
+                />
+              </Avatar>
+            </div>
+            <div
+              className="chat-message__message-info"
+            >
+              <div
+                className="chat-message__header"
+              >
+                <span
+                  className="chat-message__user-name"
+                >
+                  testUser2
+                </span>
+                <span
+                  className="chat-message__date"
+                >
+                  <TimeAgo
+                    classNames=""
+                    date={0}
+                    isLiveUpdate={true}
+                  >
+                    <time
+                      className="time-ago"
+                    >
+                      48 years ago
+                    </time>
+                  </TimeAgo>
+                </span>
+              </div>
+              <div
+                className="chat-message__text"
+              >
+                test testUser2
+              </div>
+            </div>
+          </div>
+        </ChatMessage>
+      </div>
+      <div
+        className="message-list__message-container"
+        key="2"
+      >
+        <ChatMessage
+          avatarUrl="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+          classNames=""
+          date={0}
+          isOptimistic={false}
+          isOwnMessage={true}
+          messageText="test test"
+          userName="testUser1"
+        >
+          <div
+            className="chat-message chat-message_own-message"
+          >
+            <div
+              className="chat-message__avatar-container"
+            >
+              <Avatar
+                className="chat-message__avatar"
+                size={50}
+                src="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+              >
+                <img
+                  className="chat-message__avatar"
+                  size={50}
+                  src="https://spotim-demo-chat-server.herokuapp.com/avatars/001-snorlax.png"
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "rgb(188, 188, 188)",
+                      "borderRadius": "50%",
+                      "color": "#ffffff",
+                      "display": "inline-flex",
+                      "fontSize": 25,
+                      "height": 50,
+                      "justifyContent": "center",
+                      "muiPrepared": true,
+                      "userSelect": "none",
+                      "width": 50,
+                    }
+                  }
+                />
+              </Avatar>
+            </div>
+            <div
+              className="chat-message__message-info"
+            >
+              <div
+                className="chat-message__header"
+              >
+                <span
+                  className="chat-message__user-name"
+                >
+                  testUser1
+                </span>
+                <span
+                  className="chat-message__date"
+                >
+                  <TimeAgo
+                    classNames=""
+                    date={0}
+                    isLiveUpdate={true}
+                  >
+                    <time
+                      className="time-ago"
+                    >
+                      48 years ago
+                    </time>
+                  </TimeAgo>
+                </span>
+              </div>
+              <div
+                className="chat-message__text"
+              >
+                test test
+              </div>
+            </div>
+          </div>
+        </ChatMessage>
+      </div>
+    </div>
+  </div>
+</MessageList>
+`;
