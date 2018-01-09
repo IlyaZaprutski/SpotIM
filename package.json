@@ -10,12 +10,8 @@
         "prod": "webpack -p --config webpack.config.prod.js"
     },
     "jest": {
-        "setupFiles": [
-            "./jestSetup.js"
-        ],
-        "snapshotSerializers": [
-            "enzyme-to-json/serializer"
-        ],
+        "setupFiles": ["./jestSetup.js"],
+        "snapshotSerializers": ["enzyme-to-json/serializer"],
         "moduleNameMapper": {
             "\\.(css|scss)$": "identity-obj-proxy"
         },
@@ -82,11 +78,7 @@
         "sass-loader": "^6.0.6",
         "style-loader": "^0.19.0",
         "webpack": "^3.8.1",
-        "webpack-dev-server": "^2.9.5"
+        "webpack-dev-server": "2.9.5"
     },
-    "browserslist": [
-        "safari > 7",
-        "ie > 10",
-        "ff > 20"
-    ]
+    "browserslist": ["safari > 7", "ie > 10", "ff > 20"]
 }

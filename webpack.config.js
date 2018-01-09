@@ -36,13 +36,6 @@ module.exports = {
 
     plugins: [
         new CleanWebpackPlugin(['dist']),
-        new CopyWebpackPlugin([
-            {
-                from: path.join('src', 'img'),
-                to: 'img',
-            },
-        ]),
-
         new HtmlWebpackPlugin({
             template: 'src/index.html',
         }),
