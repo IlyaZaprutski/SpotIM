@@ -5,6 +5,7 @@
     "main": "src/js/index.jsx",
     "scripts": {
         "test": "jest",
+        "test:coverage": "jest --coverage",
         "preinstall": "npm i -g eslint",
         "dev": "webpack-dev-server --open --config webpack.config.dev.js",
         "prod": "webpack -p --config webpack.config.prod.js"
@@ -16,7 +17,7 @@
             "\\.(css|scss)$": "identity-obj-proxy"
         },
         "testRegex": "(__tests__)/.*\\.test\\.js$",
-        "collectCoverage": true
+        "collectCoverageFrom": ["**/src/**/*.{js,jsx}", "!**/node_modules/**", "!**/__tests__/**"]
     },
     "author": "ilya.zaprutski",
     "license": "ISC",
