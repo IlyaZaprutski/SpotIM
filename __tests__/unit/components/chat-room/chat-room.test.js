@@ -5,10 +5,10 @@ import { Provider } from 'react-redux';
 
 import { MuiShallowWithContext, MuiMountWithContext } from '../../test-utils';
 
-import ChatRoom from '../../../src/js/components/chat-room/chat-room';
+import ChatRoom from '../../../../src/js/components/chat-room/chat-room';
 
-import UserReducerRecord from '../../../src/js/records/user-reducer-record';
-import MessageRecord from '../../../src/js/records/message-record';
+import UserReducerRecord from '../../../../src/js/records/user-reducer-record';
+import MessageRecord from '../../../../src/js/records/message-record';
 
 describe('ChatRoom component', () => {
     let chatRoom = null;

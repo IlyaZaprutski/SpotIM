@@ -93,7 +93,7 @@ export default class CreateMessageForm extends React.PureComponent {
         const { userNameWarningMsg, messageText } = this.state;
 
         const createMessageClassNames = classnames('create-message-form', classNames);
-        const isSendBtnDisabled = !(userName && messageText.trim());
+        const isSendBtnDisabled = !(userName && USER_NAME_REG_EXP.test(userName) && messageText);
 
         return (
             <div className={createMessageClassNames}>

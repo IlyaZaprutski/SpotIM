@@ -6,9 +6,9 @@ import {
     sendOptimisticMessage,
     receiveMessage,
     sendMessage,
-} from '../../src/js/actions/chat-actions';
+} from '../../../src/js/actions/chat-actions';
 
-import { ACTION_PREFIX } from '../../src/js/constants/spotim-socket-constants';
+import { ACTION_PREFIX } from '../../../src/js/constants/spotim-socket-constants';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);

@@ -3,9 +3,9 @@ import { OrderedMap } from 'immutable';
 
 import { MuiMountWithContext } from '../../test-utils';
 
-import MessageList from '../../../src/js/components/message-list/message-list';
+import MessageList from '../../../../src/js/components/message-list/message-list';
 
-import MessageRecord from '../../../src/js/records/message-record';
+import MessageRecord from '../../../../src/js/records/message-record';
 
 describe('MessageList component', () => {
     let messageList = null;

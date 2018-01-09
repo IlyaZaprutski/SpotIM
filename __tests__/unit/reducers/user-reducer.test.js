@@ -1,5 +1,5 @@
-import userReducer from '../../src/js/reducers/user-reducer';
-import UserReducerRecord from '../../src/js/records/user-reducer-record';
+import userReducer from '../../../src/js/reducers/user-reducer';
+import UserReducerRecord from '../../../src/js/records/user-reducer-record';
 
 describe('User reducer', () => {
     it('should return the initial state', () => {

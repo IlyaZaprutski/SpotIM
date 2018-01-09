@@ -4,10 +4,10 @@ import { OrderedMap } from 'immutable';
 
 import { MuiShallowWithContext } from '../test-utils';
 
-import MessageListContainer from '../../src/js/containers/message-list-container';
+import MessageListContainer from '../../../src/js/containers/message-list-container';
 
-import UserReducerRecord from '../../src/js/records/user-reducer-record';
-import MessageRecord from '../../src/js/records/message-record';
+import UserReducerRecord from '../../../src/js/records/user-reducer-record';
+import MessageRecord from '../../../src/js/records/message-record';
 
 describe('Message list container', () => {
     const messages = new OrderedMap([

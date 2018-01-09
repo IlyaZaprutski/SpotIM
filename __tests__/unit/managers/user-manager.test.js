@@ -1,4 +1,4 @@
-import UserManager from '../../src/js/managers/user-manager';
+import UserManager from '../../../src/js/managers/user-manager';
 
 describe('User manager', () => {
     const userInfo = {

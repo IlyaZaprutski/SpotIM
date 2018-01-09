@@ -3,7 +3,7 @@ import configureMockStore from 'redux-mock-store';
 
 import { MuiShallowWithContext } from '../test-utils';
 
-import ChatRoomContainer from '../../src/js/containers/chat-room-container';
+import ChatRoomContainer from '../../../src/js/containers/chat-room-container';
 
 describe('Chat room container', () => {
     const mockStore = configureMockStore();

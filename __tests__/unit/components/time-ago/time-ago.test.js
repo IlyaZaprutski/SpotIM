@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import TimeAgo from '../../../src/js/components/time-ago/time-ago';
+import TimeAgo from '../../../../src/js/components/time-ago/time-ago';
 
 describe('TimeAgo component', () => {
     let timeAgo = null;

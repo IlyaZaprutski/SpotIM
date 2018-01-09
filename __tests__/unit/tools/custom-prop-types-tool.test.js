@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Map, List } from 'immutable';
 
-import customPropTypesTool from '../../src/js/tools/custom-prop-types-tool';
+import customPropTypesTool from '../../../src/js/tools/custom-prop-types-tool';
 
 const checkFailResult = (validator, value) => {
     const props = { testProp: value };

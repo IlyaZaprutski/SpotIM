@@ -1,7 +1,7 @@
 import React from 'react';
 import { MuiShallowWithContext } from '../../test-utils';
 
-import CreateMessageForm from '../../../src/js/components/create-message-form/create-message-form';
+import CreateMessageForm from '../../../../src/js/components/create-message-form/create-message-form';
 
 describe('CreateMessageForm component', () => {
     let createMessageForm = null;

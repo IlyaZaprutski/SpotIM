@@ -12,7 +12,9 @@
         "jest": true,
         "window": true,
         "beforeAll": true,
-        "afterAll": true
+        "afterAll": true,
+        "browser": true,
+        "$": true
     },
     "rules": {
         "indent": ["error", 4],

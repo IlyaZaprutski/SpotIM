@@ -1,6 +1,6 @@
 import { SocketIO, Server } from 'mock-socket';
 
-import socketMiddleware from '../../src/js/middlewares/socket-middleware';
+import socketMiddleware from '../../../src/js/middlewares/socket-middleware';
 
 const create = (actionHandler) => {
     const store = {

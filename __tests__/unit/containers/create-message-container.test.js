@@ -3,9 +3,9 @@ import configureMockStore from 'redux-mock-store';
 
 import { MuiShallowWithContext } from '../test-utils';
 
-import CreateMessageContainer from '../../src/js/containers/create-message-container';
+import CreateMessageContainer from '../../../src/js/containers/create-message-container';
 
-import UserReducerRecord from '../../src/js/records/user-reducer-record';
+import UserReducerRecord from '../../../src/js/records/user-reducer-record';
 
 describe('Create message container', () => {
     const initialState = {

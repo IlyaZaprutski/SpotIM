@@ -6,8 +6,8 @@ import {
     setUserInfo,
     initUser,
     updateUserInfo,
-} from '../../src/js/actions/user-actions';
-import UserManager from '../../src/js/managers/user-manager';
+} from '../../../src/js/actions/user-actions';
+import UserManager from '../../../src/js/managers/user-manager';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);

@@ -1,8 +1,8 @@
 import { OrderedMap } from 'immutable';
 
-import messagesReducer from '../../src/js/reducers/messages-reducer';
+import messagesReducer from '../../../src/js/reducers/messages-reducer';
 
-import MessageRecord from '../../src/js/records/message-record';
+import MessageRecord from '../../../src/js/records/message-record';
 
 describe('Messages reducer', () => {
     const message = {

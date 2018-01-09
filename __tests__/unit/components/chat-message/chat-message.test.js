@@ -1,7 +1,7 @@
 import React from 'react';
 import { MuiMountWithContext } from '../../test-utils';
 
-import ChatMessage from '../../../src/js/components/chat-message/chat-message';
+import ChatMessage from '../../../../src/js/components/chat-message/chat-message';
 
 describe('ChatMessage component', () => {
     let chatMessage = null;
