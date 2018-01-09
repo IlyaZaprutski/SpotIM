@@ -7,3 +7,4 @@
 7) I created the custom-prop-types-tool to have ability to validate immutable data in proptypes. Something like this: CustomPropTypesTool.immutableMapOf(PropTypes.instanceOf(MessageRecord));
 8) I used the Jest library (https://facebook.github.io/jest/) to write tests.
 
+It was interesting task for me, because I had a possibility to create the react app which uses sockets. I analyzed the existing solutions and realized that at the moment there are no specific architectural solutions for working with sockets. Most people use them directly in the components, but as for me, I think it's wrong.
