@@ -78,7 +78,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost:1235',
+    baseUrl: 'http://localhost:1236',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -114,7 +114,7 @@ exports.config = {
     // commands. Instead, they hook themselves up into the test process.
     services: ['webpack-dev-server', 'selenium-standalone'],
     webpackConfig,
-    webpackPort: 1235,
+    webpackPort: 1236,
 
     //
     // Framework you want to run your specs with.
@@ -135,6 +135,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
+        timeout: 99999999,
     },
     //
     // =====
