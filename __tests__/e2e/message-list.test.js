@@ -1,10 +1,13 @@
 const expect = require('jest-matchers');
 
-const getMessageText = index =>
-    $(`.message-list__list-container .message-list__message-container:nth-child(${index}) .chat-message__text`).getText();
+const getMessageInfo = (index) => {
+    const messageContainer = $(`.message-list__list-container .message-list__message-container:nth-child(${index})`);
 
-const getAuthorName = index =>
-    $(`.message-list__list-container .message-list__message-container:nth-child(${index}) .chat-message__user-name`).getText();
+    return {
+        messageTest: messageContainer.$('.chat-message__text').getText(),
+        messageAuthor: messageContainer.$('.chat-message__user-name').getText(),
+    };
+};
 
 const generateRandomMessage = () => {
     let result = '';
@@ -40,8 +43,10 @@ describe('message-list', () => {
 
         sendBtn.click();
 
-        expect(getMessageText(1)).toBe(messageText);
-        expect(getAuthorName(1)).toBe(userName);
+        const messageInfo = getMessageInfo(1);
+
+        expect(messageInfo.messageTest).toBe(messageText);
+        expect(messageInfo.messageAuthor).toBe(userName);
     });
 
     it('should send multiple messages', () => {
@@ -56,8 +61,10 @@ describe('message-list', () => {
 
             sendBtn.click();
 
-            expect(getMessageText(i)).toBe(messageText);
-            expect(getAuthorName(i)).toBe(userName);
+            const messageInfo = getMessageInfo(i);
+
+            expect(messageInfo.messageTest).toBe(messageText);
+            expect(messageInfo.messageAuthor).toBe(userName);
         }
     });
 });
