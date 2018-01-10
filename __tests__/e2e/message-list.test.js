@@ -28,26 +28,27 @@ describe('message-list', () => {
 
     beforeEach(() => {
         browser.url('./');
+        browser.localStorage('DELETE');
 
         userNameInput = $('.create-message-form__user-name-input input');
         textMsgTextarea = $('.create-message-form__text-message-input textarea:last-of-type');
         sendBtn = $('.create-message-form__send-btn');
     });
 
-    it('should send single message', () => {
-        const messageText = generateRandomMessage();
-        const userName = 'testUser';
+    // it('should send single message', () => {
+    //     const messageText = generateRandomMessage();
+    //     const userName = 'testUser';
 
-        userNameInput.setValue(userName);
-        textMsgTextarea.setValue(messageText);
+    //     userNameInput.setValue(userName);
+    //     textMsgTextarea.setValue(messageText);
 
-        sendBtn.click();
+    //     sendBtn.click();
 
-        const messageInfo = getMessageInfo(1);
+    //     const messageInfo = getMessageInfo(1);
 
-        expect(messageInfo.messageTest).toBe(messageText);
-        expect(messageInfo.messageAuthor).toBe(userName);
-    });
+    //     expect(messageInfo.messageTest).toBe(messageText);
+    //     expect(messageInfo.messageAuthor).toBe(userName);
+    // });
 
     it('should send multiple messages', () => {
         const baseUserName = 'testUser';

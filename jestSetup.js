@@ -25,4 +25,12 @@ class LocalStorageMock {
     }
 }
 
+class Notification {
+    requestPermission() {}
+
+    close() {}
+}
+
 global.localStorage = new LocalStorageMock();
+
+global.Notification = Notification;
