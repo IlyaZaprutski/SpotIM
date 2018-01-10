@@ -14,7 +14,8 @@
         "beforeAll": true,
         "afterAll": true,
         "browser": true,
-        "$": true
+        "$": true,
+        "Notification": true
     },
     "rules": {
         "indent": ["error", 4],

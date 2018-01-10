@@ -2,6 +2,7 @@ import { createAction } from 'redux-actions';
 
 import { ACTION_PREFIX } from '../constants/spotim-socket-constants';
 import { getGuid } from '../tools/guid-tool';
+import { sendNotification } from '../tools/notification-tool';
 
 export const sendMessageToServer = createAction(
     `${ACTION_PREFIX}SEND_MESSAGE_TO_SERVER`,
@@ -32,15 +33,19 @@ export const receiveMessage = createAction(
     'RECEIVE_MESSAGE',
     ({
         id, authorId, username, avatar, text, date,
-    }) => ({
-        id,
-        authorId,
-        userName: username,
-        avatarUrl: avatar,
-        messageText: text,
-        date,
-        isOptimistic: false,
-    }),
+    }) => {
+        sendNotification(username, text, avatar);
+
+        return {
+            id,
+            authorId,
+            userName: username,
+            avatarUrl: avatar,
+            messageText: text,
+            date,
+            isOptimistic: false,
+        };
+    },
 );
 
 export const sendMessage = text => (dispatch, getState) => {

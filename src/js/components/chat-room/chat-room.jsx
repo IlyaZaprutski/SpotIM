@@ -6,6 +6,7 @@ import Paper from 'material-ui/Paper';
 
 import CreateMessageContainer from '../../containers/create-message-container';
 import MessageListContainer from '../../containers/message-list-container';
+import { requestNotificationPermission } from '../../tools/notification-tool';
 
 import './chat-room.scss';
 
@@ -20,6 +21,7 @@ export default class ChatRoom extends React.PureComponent {
     };
 
     componentDidMount() {
+        requestNotificationPermission();
         this.props.initUser();
     }
 
