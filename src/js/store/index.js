@@ -5,7 +5,7 @@ import io from 'socket.io-client';
 import socketMiddleware from '../middlewares/socket-middleware';
 import { ENDPOINT_URL, EVENT_NAME, ACTION_PREFIX } from '../constants/spotim-socket-constants';
 
-import { receiveMessage } from '../actions/chat-actions';
+import { receiveSocketInfo } from '../actions/chat-actions';
 
 import * as appReducers from '../reducers';
 
@@ -17,7 +17,7 @@ const spotimSocketMiddleware = socketMiddleware(
     spotimSocket,
     ACTION_PREFIX,
     EVENT_NAME,
-    receiveMessage,
+    receiveSocketInfo,
     (eventName, action, emit, next) => {
         emit(eventName, { ...action.payload });
         next(action);

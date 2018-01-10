@@ -12,13 +12,21 @@
         "wdio": "wdio"
     },
     "jest": {
-        "setupFiles": ["./jestSetup.js"],
-        "snapshotSerializers": ["enzyme-to-json/serializer"],
+        "setupFiles": [
+            "./jestSetup.js"
+        ],
+        "snapshotSerializers": [
+            "enzyme-to-json/serializer"
+        ],
         "moduleNameMapper": {
             "\\.(css|scss)$": "identity-obj-proxy"
         },
         "testRegex": "(__tests__)/unit/.*\\.test\\.js$",
-        "collectCoverageFrom": ["**/src/**/*.{js,jsx}", "!**/node_modules/**", "!**/__tests__/**"]
+        "collectCoverageFrom": [
+            "**/src/**/*.{js,jsx}",
+            "!**/node_modules/**",
+            "!**/__tests__/**"
+        ]
     },
     "author": "ilya.zaprutski",
     "license": "ISC",
@@ -89,5 +97,9 @@
         "webpack": "^3.8.1",
         "webpack-dev-server": "2.9.5"
     },
-    "browserslist": ["safari > 7", "ie > 10", "ff > 20"]
+    "browserslist": [
+        "safari > 7",
+        "ie > 10",
+        "ff > 20"
+    ]
 }
